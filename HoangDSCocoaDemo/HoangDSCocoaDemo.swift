@@ -6,6 +6,8 @@
 //  Copyright © 2019 VTP Digitalize. All rights reserved.
 //
 
-class HoangDSCocoaDemo {
-
+public class HoangDSCocoaDemo {
+    public static func UIIDNum() -> String {
+        return "DemoLib ------> abcde"
+    }
 }
