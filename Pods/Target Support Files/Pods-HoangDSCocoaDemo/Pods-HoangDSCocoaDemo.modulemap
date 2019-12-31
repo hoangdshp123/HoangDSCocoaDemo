@@ -1,0 +1,6 @@
+framework module Pods_HoangDSCocoaDemo {
+  umbrella header "Pods-HoangDSCocoaDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
