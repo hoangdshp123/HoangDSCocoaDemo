@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginSSOVC" customModuleProvider="target">
+            <connections>
+                <outlet property="tf1" destination="4iI-Hp-lBB" id="XhR-UV-662"/>
+                <outlet property="tf2" destination="3aW-Xs-Luy" id="TQp-tw-C63"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckF-mV-DhZ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4iI-Hp-lBB">
+                            <rect key="frame" x="30" y="251" width="354" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3aW-Xs-Luy">
+                            <rect key="frame" x="30" y="328" width="354" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeg-kf-aUm">
+                            <rect key="frame" x="30" y="419" width="354" height="30"/>
+                            <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="1" green="0.37074179150102193" blue="0.41818647790147501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Đăng nhập"/>
+                            <connections>
+                                <action selector="loginClicked:" destination="-1" eventType="touchUpInside" id="0DI-3p-G3o"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.58748489746542765" blue="0.60727788108428726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="4iI-Hp-lBB" firstAttribute="top" secondItem="ckF-mV-DhZ" secondAttribute="top" constant="251" id="1vi-TS-Ngp"/>
+                        <constraint firstItem="qeg-kf-aUm" firstAttribute="trailing" secondItem="3aW-Xs-Luy" secondAttribute="trailing" id="8QB-fn-YD8"/>
+                        <constraint firstItem="4iI-Hp-lBB" firstAttribute="leading" secondItem="ckF-mV-DhZ" secondAttribute="leading" constant="30" id="CCb-8f-O5H"/>
+                        <constraint firstItem="3aW-Xs-Luy" firstAttribute="trailing" secondItem="4iI-Hp-lBB" secondAttribute="trailing" id="Mv6-ej-qeL"/>
+                        <constraint firstItem="qeg-kf-aUm" firstAttribute="leading" secondItem="3aW-Xs-Luy" secondAttribute="leading" id="WL6-yu-Vu2"/>
+                        <constraint firstItem="qeg-kf-aUm" firstAttribute="top" secondItem="3aW-Xs-Luy" secondAttribute="bottom" constant="57" id="ZK5-QC-JEy"/>
+                        <constraint firstItem="3aW-Xs-Luy" firstAttribute="top" secondItem="4iI-Hp-lBB" secondAttribute="bottom" constant="43" id="iE5-F3-hOG"/>
+                        <constraint firstAttribute="trailing" secondItem="4iI-Hp-lBB" secondAttribute="trailing" constant="30" id="sO6-OE-3Xk"/>
+                        <constraint firstItem="3aW-Xs-Luy" firstAttribute="leading" secondItem="4iI-Hp-lBB" secondAttribute="leading" id="y08-Ez-xtc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ckF-mV-DhZ" secondAttribute="bottom" id="Iey-rQ-4QK"/>
+                <constraint firstItem="ckF-mV-DhZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Nbr-aj-uPh"/>
+                <constraint firstAttribute="trailing" secondItem="ckF-mV-DhZ" secondAttribute="trailing" id="jrq-VY-wop"/>
+                <constraint firstItem="ckF-mV-DhZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nFV-GZ-4BH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="133" y="154"/>
+        </view>
+    </objects>
+</document>
