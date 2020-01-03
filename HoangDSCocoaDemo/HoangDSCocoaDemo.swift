@@ -14,13 +14,13 @@ public class HoangDSCocoaDemo {
     }
     
     public static func openLoginSSO(viewController: UIViewController, callback: @escaping (_ token: String?) -> Void) {
-        let frameworkBundle = Bundle(identifier:"org.cocoapods.HoangDSCocoaDemo")
-        let loginSSOVC = LoginSSOVC(nibName: "LoginSSOVC", bundle: frameworkBundle)
+        //        let frameworkBundle = Bundle(identifier:"org.cocoapods.HoangDSCocoaDemo")
+        let loginSSOVC = LoginSSOVC(nibName: "LoginSSOVC", bundle: nil)
         loginSSOVC.onComplete = { result in
             callback(result)
             viewController.navigationController?.popViewController(animated: true)
         }
-        viewController.navigationController?.present(loginSSOVC, animated: true, completion: {})
+        viewController.present(loginSSOVC, animated: true, completion: {})
     }
     
     public static func logoutSSO(viewController: UIViewController) {
