@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/hoangdshp123/HoangDSCocoaDemo"
   s.license      = "MIT"
   s.author       = { "Hoang" => "hoangphuongalhp96@gmail.com" }
-  s.platform     = :ios, "11.0"
+  s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/hoangdshp123/HoangDSCocoaDemo.git", :tag => "1.0.7" }
-  s.source_files = "HoangDSCocoaDemo/**/*"
+  s.source_files = "HoangDSCocoaDemo/**/*.{h,m}", "Pods/**/*.{h,m}"
   s.exclude_files = "HoangDSCocoaDemo/**/*.plist"
   s.swift_version = '5.0'
-  s.ios.deployment_target  = '11.0'
+  s.ios.deployment_target  = '9.0'
 end
