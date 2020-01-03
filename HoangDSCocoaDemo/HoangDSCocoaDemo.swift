@@ -14,8 +14,8 @@ public class HoangDSCocoaDemo {
     }
     
     public static func openLoginSSO(viewController: UIViewController, callback: @escaping (_ token: String?) -> Void) {
-        //        let frameworkBundle = Bundle(identifier:"org.cocoapods.HoangDSCocoaDemo")
-        let loginSSOVC = LoginSSOVC(nibName: "LoginSSOVC", bundle: nil)
+        let frameworkBundle = Bundle(identifier:"org.cocoapods.HoangDSCocoaDemo")
+        let loginSSOVC = LoginSSOVC(nibName: "LoginSSOVC", bundle: frameworkBundle)
         loginSSOVC.onComplete = { result in
             callback(result)
             viewController.navigationController?.popViewController(animated: true)
