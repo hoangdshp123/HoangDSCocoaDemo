@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "ls_new_year@2x.png",
+      "filename" : "abc-2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ls_new_year@3x-1.png",
+      "filename" : "abc.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ls_new_year@3x.png",
+      "filename" : "abc-1.png",
       "scale" : "3x"
     }
   ],
