@@ -79,7 +79,6 @@
 			children = (
 				5124A12323BDA6C700C12286 /* UILoginSSO */,
 				5144DB5E23BAFBD600EDE53C /* HoangDSCocoaDemo.swift */,
-				515457DB23C034B90047FFA3 /* AssetLogin.xcassets */,
 			);
 			path = HoangDSCocoaDemo;
 			sourceTree = "<group>";
@@ -87,6 +86,7 @@
 		82D632A411201C9884C2DAB4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				515457DB23C034B90047FFA3 /* AssetLogin.xcassets */,
 				1C372F40AB32B5CD38CE1C4A /* Pods-HoangDSCocoaDemo.debug.xcconfig */,
 				3469E7403A7838F1FF39B222 /* Pods-HoangDSCocoaDemo.release.xcconfig */,
 			);
