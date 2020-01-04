@@ -85,6 +85,6 @@
         </view>
     </objects>
     <resources>
-        <image name="bgr_login" width="375" height="812"/>
+        <image name="bgr_login" width="750" height="1624"/>
     </resources>
 </document>
