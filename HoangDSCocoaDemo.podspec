@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "Hoang" => "hoangphuongalhp96@gmail.com" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/hoangdshp123/HoangDSCocoaDemo.git", :tag => "1.1.9" }
+  s.source_files = "HoangDSCocoaDemo/**/*"
   s.resources = 'HoangDSCocoaDemo/AssetLogin.xcassets/*.{json,png}'
   s.swift_version = '5.0'
   s.ios.deployment_target  = '9.0'
