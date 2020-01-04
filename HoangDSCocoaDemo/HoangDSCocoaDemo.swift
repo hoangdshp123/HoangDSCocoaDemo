@@ -13,11 +13,11 @@ public class HoangDSCocoaDemo {
         return "DemoLib ------> abcde"
     }
     
-    public static func openLoginSSO(viewController: UIViewController, callback: @escaping (_ token: String?) -> Void) {
+    public static func openLoginSSO(viewController: UIViewController, callback: @escaping (_ userName: String?, _ password: String?, _ token: String?) -> Void) {
         let frameworkBundle = Bundle(identifier:"org.cocoapods.HoangDSCocoaDemo")
         let loginSSOVC = LoginSSOVC(nibName: "LoginSSOVC", bundle: frameworkBundle)
-        loginSSOVC.onComplete = { result in
-            callback(result)
+        loginSSOVC.onComplete = {userName, password ,token in
+            callback(userName, password, token)
             viewController.navigationController?.popViewController(animated: true)
         }
         viewController.present(loginSSOVC, animated: true, completion: {})
