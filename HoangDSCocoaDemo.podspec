@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/hoangdshp123/HoangDSCocoaDemo.git", :tag => "1.1.2" }
   s.source_files = "HoangDSCocoaDemo/**/*"
-
+  s.resources = "HoangDSCocoaDemo/**/*.{png,jpeg,jpg,storyboard,xcdatamodeld,xib}"
   s.swift_version = '5.0'
   s.ios.deployment_target  = '9.0'
   s.dependency 'KRProgressHUD'
