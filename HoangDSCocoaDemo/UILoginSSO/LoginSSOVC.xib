@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginSSOVC" customModuleProvider="target">
             <connections>
+                <outlet property="btnLogin" destination="qeg-kf-aUm" id="aZG-ox-0rT"/>
                 <outlet property="tf1" destination="4iI-Hp-lBB" id="XhR-UV-662"/>
                 <outlet property="tf2" destination="3aW-Xs-Luy" id="TQp-tw-C63"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,34 +23,50 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckF-mV-DhZ">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgr_login" translatesAutoresizingMaskIntoConstraints="NO" id="l7h-92-Q3b">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        </imageView>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tài khoản" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4iI-Hp-lBB">
-                            <rect key="frame" x="30" y="251" width="354" height="34"/>
+                            <rect key="frame" x="30" y="270" width="354" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="YcY-pL-KXx"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3aW-Xs-Luy">
-                            <rect key="frame" x="30" y="328" width="354" height="34"/>
+                            <rect key="frame" x="30" y="353" width="354" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="vqc-Gf-Llo"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeg-kf-aUm">
-                            <rect key="frame" x="30" y="419" width="354" height="30"/>
-                            <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="tintColor" red="1" green="0.37074179150102193" blue="0.41818647790147501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <rect key="frame" x="82" y="453" width="250" height="40"/>
+                            <color key="backgroundColor" red="0.2641767242118474" green="0.81793305837563457" blue="0.66321238672840233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="4XP-2J-2rV"/>
+                                <constraint firstAttribute="width" constant="250" id="NS4-YA-C1d"/>
+                            </constraints>
+                            <color key="tintColor" red="0.97464983571820252" green="1" blue="0.9113888900599838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Đăng nhập"/>
                             <connections>
                                 <action selector="loginClicked:" destination="-1" eventType="touchUpInside" id="0DI-3p-G3o"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.58748489746542765" blue="0.60727788108428726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="4iI-Hp-lBB" firstAttribute="top" secondItem="ckF-mV-DhZ" secondAttribute="top" constant="251" id="1vi-TS-Ngp"/>
-                        <constraint firstItem="qeg-kf-aUm" firstAttribute="trailing" secondItem="3aW-Xs-Luy" secondAttribute="trailing" id="8QB-fn-YD8"/>
+                        <constraint firstItem="4iI-Hp-lBB" firstAttribute="top" secondItem="ckF-mV-DhZ" secondAttribute="top" constant="270" id="1vi-TS-Ngp"/>
+                        <constraint firstItem="l7h-92-Q3b" firstAttribute="leading" secondItem="ckF-mV-DhZ" secondAttribute="leading" id="4Cc-af-1TH"/>
                         <constraint firstItem="4iI-Hp-lBB" firstAttribute="leading" secondItem="ckF-mV-DhZ" secondAttribute="leading" constant="30" id="CCb-8f-O5H"/>
+                        <constraint firstItem="qeg-kf-aUm" firstAttribute="centerX" secondItem="ckF-mV-DhZ" secondAttribute="centerX" id="Dhi-6w-Csj"/>
+                        <constraint firstItem="l7h-92-Q3b" firstAttribute="top" secondItem="ckF-mV-DhZ" secondAttribute="top" id="GYu-oq-0Oe"/>
                         <constraint firstItem="3aW-Xs-Luy" firstAttribute="trailing" secondItem="4iI-Hp-lBB" secondAttribute="trailing" id="Mv6-ej-qeL"/>
-                        <constraint firstItem="qeg-kf-aUm" firstAttribute="leading" secondItem="3aW-Xs-Luy" secondAttribute="leading" id="WL6-yu-Vu2"/>
-                        <constraint firstItem="qeg-kf-aUm" firstAttribute="top" secondItem="3aW-Xs-Luy" secondAttribute="bottom" constant="57" id="ZK5-QC-JEy"/>
+                        <constraint firstAttribute="trailing" secondItem="l7h-92-Q3b" secondAttribute="trailing" id="Wvg-Z1-WSd"/>
+                        <constraint firstItem="qeg-kf-aUm" firstAttribute="top" secondItem="3aW-Xs-Luy" secondAttribute="bottom" constant="60" id="ZK5-QC-JEy"/>
+                        <constraint firstAttribute="bottom" secondItem="l7h-92-Q3b" secondAttribute="bottom" id="hEX-UA-ngY"/>
                         <constraint firstItem="3aW-Xs-Luy" firstAttribute="top" secondItem="4iI-Hp-lBB" secondAttribute="bottom" constant="43" id="iE5-F3-hOG"/>
                         <constraint firstAttribute="trailing" secondItem="4iI-Hp-lBB" secondAttribute="trailing" constant="30" id="sO6-OE-3Xk"/>
                         <constraint firstItem="3aW-Xs-Luy" firstAttribute="leading" secondItem="4iI-Hp-lBB" secondAttribute="leading" id="y08-Ez-xtc"/>
@@ -67,4 +84,7 @@
             <point key="canvasLocation" x="133" y="154"/>
         </view>
     </objects>
+    <resources>
+        <image name="bgr_login" width="375" height="812"/>
+    </resources>
 </document>

@@ -32,6 +32,7 @@
 		5124A12523BDA6FB00C12286 /* LoginSSOVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginSSOVC.xib; sourceTree = "<group>"; };
 		5144DB5B23BAFBD600EDE53C /* libHoangDSCocoaDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHoangDSCocoaDemo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5144DB5E23BAFBD600EDE53C /* HoangDSCocoaDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoangDSCocoaDemo.swift; sourceTree = "<group>"; };
+		515457D923C0264D0047FFA3 /* LoginAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoginAsset.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 			children = (
 				5124A12323BDA6C700C12286 /* UILoginSSO */,
 				5144DB5E23BAFBD600EDE53C /* HoangDSCocoaDemo.swift */,
+				515457D923C0264D0047FFA3 /* LoginAsset.xcassets */,
 			);
 			path = HoangDSCocoaDemo;
 			sourceTree = "<group>";

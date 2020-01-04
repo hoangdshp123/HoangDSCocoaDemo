@@ -17,10 +17,14 @@ class LoginSSOVC: UIViewController {
 
     @IBOutlet var tf1: UITextField!
     @IBOutlet var tf2: UITextField!
+    @IBOutlet var btnLogin: UIButton!
+    
+    
     var onComplete: ((_ userName: String, _ password: String, _ token: String)->())?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnLogin.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
     }
 
