@@ -77,9 +77,8 @@
 		5144DB5D23BAFBD600EDE53C /* HoangDSCocoaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				51E3748B23C2C3B8002275DA /* Classes */,
 				51E3748823C2C1E2002275DA /* Resource */,
-				5124A12323BDA6C700C12286 /* UILoginSSO */,
-				5144DB5E23BAFBD600EDE53C /* HoangDSCocoaDemo.swift */,
 			);
 			path = HoangDSCocoaDemo;
 			sourceTree = "<group>";
@@ -90,6 +89,15 @@
 				51E3748A23C2C226002275DA /* abc.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		51E3748B23C2C3B8002275DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5124A12323BDA6C700C12286 /* UILoginSSO */,
+				5144DB5E23BAFBD600EDE53C /* HoangDSCocoaDemo.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		82D632A411201C9884C2DAB4 /* Pods */ = {
