@@ -32,7 +32,7 @@
 		5124A12523BDA6FB00C12286 /* LoginSSOVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginSSOVC.xib; sourceTree = "<group>"; };
 		5144DB5B23BAFBD600EDE53C /* libHoangDSCocoaDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHoangDSCocoaDemo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5144DB5E23BAFBD600EDE53C /* HoangDSCocoaDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoangDSCocoaDemo.swift; sourceTree = "<group>"; };
-		515457DB23C034B90047FFA3 /* AssetLogin.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetLogin.xcassets; sourceTree = "<group>"; };
+		51E3748A23C2C226002275DA /* abc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abc.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,6 @@
 		5124A12323BDA6C700C12286 /* UILoginSSO */ = {
 			isa = PBXGroup;
 			children = (
-				515457DB23C034B90047FFA3 /* AssetLogin.xcassets */,
 				5124A12423BDA6FB00C12286 /* LoginSSOVC.swift */,
 				5124A12523BDA6FB00C12286 /* LoginSSOVC.xib */,
 			);
@@ -78,10 +77,19 @@
 		5144DB5D23BAFBD600EDE53C /* HoangDSCocoaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				51E3748823C2C1E2002275DA /* Resource */,
 				5124A12323BDA6C700C12286 /* UILoginSSO */,
 				5144DB5E23BAFBD600EDE53C /* HoangDSCocoaDemo.swift */,
 			);
 			path = HoangDSCocoaDemo;
+			sourceTree = "<group>";
+		};
+		51E3748823C2C1E2002275DA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				51E3748A23C2C226002275DA /* abc.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		82D632A411201C9884C2DAB4 /* Pods */ = {

@@ -23,7 +23,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckF-mV-DhZ">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgr_login" translatesAutoresizingMaskIntoConstraints="NO" id="l7h-92-Q3b">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abc.png" translatesAutoresizingMaskIntoConstraints="NO" id="l7h-92-Q3b">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         </imageView>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tài khoản" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4iI-Hp-lBB">
@@ -85,6 +85,6 @@
         </view>
     </objects>
     <resources>
-        <image name="bgr_login" width="750" height="1624"/>
+        <image name="abc.png" width="375" height="812"/>
     </resources>
 </document>
